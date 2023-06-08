@@ -1,0 +1,32 @@
+Title: Credit Card Number Validation Using the Luhn Algorithm
+
+Author: Satyam Mishra
+
+Introduction:
+This code implements the Luhn Algorithm to validate credit card numbers. The Luhn Algorithm is a widely used method to check the validity of credit card numbers by performing a series of mathematical operations. This document provides an overview of the code, its functionality, and the technical analysis of its implementation.
+
+Issue Description:
+The code addresses the need to validate credit card numbers using the Luhn Algorithm. It takes user input for a credit card number and determines its validity by applying the algorithm.
+
+Detailed Comment:
+The code is well-structured and follows best practices in terms of variable naming and code organization. It starts by defining a function, isNumberString, which checks if a given string consists only of numerical digits. This function is used to validate the input provided by the user.
+
+The main function contains the main logic of the program. It repeatedly prompts the user to enter a credit card number until the user types "exit." It performs the following steps to validate the credit card number:
+
+Double every second digit from the right, starting from the second-to-last digit, and sum the resulting numbers. If the doubled value is a two-digit number, the individual digits are added together to obtain a single-digit number.
+
+Add every odd-placed digit from the right to the sum obtained in step 1.
+
+Check if the final sum is a multiple of 10. If it is, the credit card number is considered valid; otherwise, it is considered invalid.
+
+Technical Analysis:
+The code demonstrates a solid understanding of string manipulation, mathematical operations, and control flow. It correctly implements the Luhn Algorithm to validate credit card numbers. The use of functions, such as isNumberString, enhances code reusability and readability.
+
+The code employs basic error handling by checking for invalid input. If the user enters a non-numeric string, the program displays a "Bad input!" message and continues to prompt for a valid credit card number.
+
+The code could be further improved by adding input validation to handle edge cases, such as empty input or credit card numbers with leading zeros. Additionally, it would be beneficial to provide more informative error messages to guide users in case of invalid inputs.
+
+Overall, the code achieves its purpose of validating credit card numbers using the Luhn Algorithm efficiently and effectively.
+
+Block Post or Technical Document:
+To further explore the implementation of credit card number validation using the Luhn Algorithm, I have authored a detailed technical document titled "Validating Credit Card Numbers with the Luhn Algorithm: Implementation and Insights." This document delves into the mathematical concepts behind the algorithm, provides a step-by-step breakdown of the code, and discusses potential enhancements and considerations. It aims to serve as a comprehensive resource for developers interested in understanding and implementing credit card number validation algorithms.
